@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    font-family: dm sans, sans-serif;
+}
+body{
+    background-color: #7C0E44;
+}
+header{
+    padding-right: 25px;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin: 20px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 10px 20px;
+}
+li a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    font-size: 18px;
+    color: white;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: #F2DACE;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.hero-container{
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+    gap: 50px;
+}
+.hero-container::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(Background-image-1.png);
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    z-index: -2;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    color: white;   
+    background-color: transparent
+}
+.hero-text h1{
+    font-size: 46px;
+    font-family: fraunces, serif;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.hero-text p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.hero-container::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.container{
+    margin-top: 50px;
+    text-align: center;
+}
+h2{
+    font-size: 36px;
+    font-family: fraunces, serif;
+    font-weight: 550;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+.container p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+.dish img{
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#things{
+    gap: 50px;
+}
+.dish{
+    text-align: center;
+}
+.dish p {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.section3{
+    background-color: #4A0A28;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+    margin-top: 50px;
+}
+.section3-text h2{
+    text-align: left;
+    max-width: 500px;
+    color: white;
+}
+.section3-text p{
+    text-align: left;
+    max-width: 500px;
+    color: white;
+}
+.section3-image img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.section4{
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+.section4::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(Background-image-2.png);
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    z-index: -2;
+}
+.section4::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.section4 p{
+    color: white;
+    margin: 0px;
+}
+.section4 h2{
+    margin: 15px 0px;
+}
+#testimonials{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 110px;
+}
+.testimonial{
+    width: 350px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 50px 40px 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(6px);
+    border-radius: 25px;
+}
+.testimonial img{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ddd;
+    margin-top: -85px;
+    margin-bottom: 25px;
+}
+.section4 .testimonial .quote{
+    color: #222;
+    font-size: 16px;
+    text-align: center;
+    flex-grow: 1;
+}
+.author{
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 5px 10px;
+    margin-top: 25px;
+    color: #222;
+}
+.author strong{
+    font-size: 18px;
+}
+.author span{
+    font-size: 16px;
+}
+.gallery-section{
+    background-color: #4A0A28;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px 80px;
+}
+.gallery-section h2{
+    color: white;
+    margin-bottom: 30px;
+}
+.gallery-section p{
+    color: white;
+    margin: 0px 0px 20px 0px;
+}
+.gallery {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    gap: 60px;
+}
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+.gallery img.tall {
+    grid-row: span 2;
+}
+.booking-section{
+    background-color: #AB5D78;
+    gap: 200px;
+    padding: 30px 0px 30px 0px;
+}
+.booking-text{
+    max-width: 400px;
+}
+.booking-text h2{
+    text-align: left;
+}
+.booking-text p{
+    text-align: left;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+.booking-form{
+    width: 100%;
+    max-width: 560px;
+    gap: 2px;
+}
+.booking-form .form-label{
+    color: white;
+    font-weight: 500;
+    margin: 0;
+}
+.booking-form .form-control,
+.booking-form .form-select{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    color: white;
+    height: 30px;
+}
+.booking-form .form-control:focus,
+.booking-form .form-select:focus{
+    background-color: transparent;
+    color: white;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-bottom: 2px solid white !important;
+}
+.booking-form .form-select option{
+    color: #222;
+}
+.booking-form input::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+    cursor: pointer;
+}
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+.nav2 a{
+    font-size: 14px;
+}
+footer ul{
+    list-style: none;
+}
+.footer-text p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-bottom: 0;
+    justify-content: center;
+}
+hr{
+    border: none;
+    height: 1px;
+    background-color: white;
+    width: 80%;
+    margin-top: 50px;
+}
+.footer-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 40px;
+}
+.footer-icons p{
+    margin-bottom: 0;
+}
+.icons a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
